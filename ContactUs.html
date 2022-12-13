@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style_contact.css" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
   </head>
   <body>
     <header>
@@ -25,7 +26,7 @@
           <li>   <a href="accomodation.html" >Accomodation</a></li>
           <li>   <a href="gallery.html">Gallery</a></li>
            <li>  <a href="faqs.html"> FAQs </a></li>
-          <li>   <a href="ContactUs.html" style="color: white; font-weight: bold; "> Contact US</a></li>
+          <li>   <a href="ContactUs.html"> Contact US</a></li>
           <li>   <a href="javascript:void(0);" class="icon" onclick="myFunction()"></li>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -33,18 +34,39 @@
         </ul>
       </nav>
     </header>
-    <form action="./response.html" method="get">
-      <main>
+
+    <main>
+
+      <h2>Contact Us?</h2>
+
+    <div id="animatorbox">
+        <div id="animation-container">
+        </div>
+    </div>
+
+    <form name= "ContactUsForm" onsubmit = "return validate()" method="post">
         <fieldset>
           <legend>Contact Information</legend>
+        <div class="row">
           <label for="First Name">First Name:</label>
-          <input type="text" name="First Name:" size="30" /> <br />
+          <input type="text" name="First_Name" size="30" /> <br />
+          <div class="errtext" id="fnameErr"></div>
+        </div>
+        <div class="row">
           <label for="Last Name">Last Name:</label>
-          <input type="text" name="Last Name:" size="30" /> <br />
+          <input type="text" name="Last_Name" size="30" /> <br />
+          <div class="errtext" id="lnameErr"></div>
+        </div>
+        <div class="row">
           <label for="email">Email: </label>
           <input type="email" name="email" size="30" /> <br />
+          <div class="errtext" id="emailErr"></div>
+        </div>
+        <div class="row">
           <label for="Phone Number">Phone Number: </label>
-          <input type="text" name="text" size="30" /> <br />
+          <input type="text" name="mobile" size="30" maxlength="10"/> <br />
+          <div class="errtext" id="numErr"></div>
+        </div>
         </fieldset>
         <fieldset>
           <legend>Questionaire</legend>
@@ -55,11 +77,7 @@
           <p>
             Which section you need more information about?
           </p>
-            <select name="Section">
-              <option value="Student Life">Student Life</option>
-              <option value="Flights">Flights</option>
-              <option value="Things To Carry">Things To Carry</option>
-              <option value="FAQs">FAQs</option>
+            <select name="Section" id="sectionHelp">
             </select>
           </p>
           <p>
@@ -67,19 +85,21 @@
           </p>
           <input type="text" name="text" size="60" />
           <br /><br />
+          <div class="row">
+
           Country you reside in:<br />
-          <select name="Country you reside in">
-            <option value="India">India</option>
-            <option value="Canada">Canada</option>
-            <option value="Others">Others</option>
+          <select name="country" id="country">
           </select>
+          <div class="errtext" id="countryErr"></div>
+          </div>
           <br />
+          
           Comments:<br />
            <textarea name="comment"></textarea>
         </fieldset>
-        <input type="submit" name="submit" value="Submit" />
-      </main>
+        <input type="submit" value="Register" />
     </form>
+  </main>
     <footer>
         <div class="footer1">
             <img src="./image/logo1.png" width="150px" height="150px">
@@ -97,12 +117,12 @@
             <nav>
                 <ul>
                   <li> <a href="./index.html" >Home</a></li>
-                  <li> <a href="" >Overview</a></li>
-                  <li> <a href="" >Student</a></li>
+                  <li> <a href="./overview.html" >Overview</a></li>
+                  <li> <a href="./student.html" >Student</a></li>
                   <li> <a href="./flights.html" >Flights</a></li>
-                  <li> <a href="" >Things to Carry</a></li>
+                  <li> <a href="./thingstocarry.html" >Things to Carry</a></li>
                   <li> <a href="./FutureProspects.html">Future Prospects</a></li>
-                  <li> <a href="" >FAQs</a></li>
+                  <li> <a href="./faqs.html" >FAQs</a></li>
                   <li> <a href="./ContactUs.html" >Contact US</a></li>
                 </ul>
             </nav>
@@ -111,15 +131,6 @@
             <img src="./image/map.png">
         </div>
     </footer>
+    <script src="./js/contact-us-main.js"></script>
   </body>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "nav ul") {
-        x.className += " responsive";
-      } else {
-        x.className = "nav ul";
-      }
-    }
-  </script>
 </html>

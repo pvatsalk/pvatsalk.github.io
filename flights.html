@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights@Canada</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="./Images/favicon.ico" rel="PageIcon"/>
+    <link href="./css/style-flights.css" rel="StyleSheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <header>
+        <img style=" width: 10%;" src="image/logo1.png">
+        <nav>
+            <ul id="myTopnav">
+              
+
+              <li>  <a href="index.html"> Home </a> </li>
+              <li>  <a href="overview.html"> Overview </a> </li>
+              <li>   <a href="FutureProspects.html"> Future Prospects </a></li>
+              <li>   <a href="student.html" > Student </a></li>
+              <li>   <a href="work.html" > Work</a></li>
+              <li>   <a href="flights.html" style="color: white; font-weight: bold; "> Flights </a></li>
+              <li>   <a href="thingstocarry.html"> Things to Carry </a></li>
+              <li>   <a href="accomodation.html">Accomodation</a></li>
+              <li>   <a href="gallery.html">Gallery</a></li>
+               <li>  <a href="faqs.html" > FAQs </a></li>
+              <li>   <a href="ContactUs.html"> Contact US</a></li>
+              <li>   <a href="javascript:void(0);" class="icon" onclick="myFunction()"></li>
+
+                <a style="color: white; font-weight: bold;" href="./ContactUs.html"> Contact US</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <h2>Resouces for Flight Booking Options</h2>
+      <img src="./image/in_flight.jpeg" alt="In Flight View" width="346" height="511"/>
+      <p>
+        Following are the list of flight booking options and websites that are best suited for availing cheap flights that are not listed on google search
+        and some airlines offer student discounts.
+      </p>
+      <ul>
+        <li><i class="fa-solid fa-plane-departure"></i><a href="https://www.kiwi.com/en/"></a>kiwi.com</li>
+        <li><i class="fa-solid fa-plane-departure"></i><a href="https://www.emirates.com/us/english/special-offers/student-special-fares/"></a>Emirates {offers student discount}</li>
+        <li><i class="fa-solid fa-plane-departure"></i><a href="https://www.skyscanner.net/"></a>SkyScanner.com</li>
+        <li><i class="fa-solid fa-plane-departure"></i><a href="https://www.kayak.co.in/"></a>kayak.com</li>
+      </ul>
+      <p>
+        In order to avoid random price change, use VPN and incognito mode while visiting these sites to book flight.
+      </p>
+      <p>
+        Preferably book flights that have thier departure on thurdays and tuesday, with booking day as Saturday.
+      </p>
+    </main>
+    <footer>
+      <div class="footer1">
+          <img src="./image/logo1.png" width="150px" height="150px">
+          <nav>
+              <a href="#" class="fa-brands fa-facebook"></a>
+              <a href="#" class="fa-brands fa-twitter"></a>
+              <a href="#" class="fa-brands fa-google"></a>
+              <a href="#" class="fa-brands fa-linkedin"></a>
+          </nav>
+      </div>
+      <div class="footer2">
+          <div class="foothead">
+              Quick Links
+          </div>
+          <nav>
+              <ul>
+                <li> <a href="./index.html" >Home</a></li>
+                <li> <a href="" >Overview</a></li>
+                <li> <a href="" >Student</a></li>
+                <li> <a href="./flights.html" >Flights</a></li>
+                <li> <a href="" >Things to Carry</a></li>
+                <li> <a href="./FutureProspects.html">Future Prospects</a></li>
+                <li> <a href="" >FAQs</a></li>
+                <li> <a href="./ContactUs.html" >Contact US</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div>
+          <img src="./image/map.png">
+      </div>
+  </footer>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav ul") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav ul";
+      }
+    }
+</script>
+</html>

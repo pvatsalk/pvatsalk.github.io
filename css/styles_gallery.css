@@ -1,0 +1,25 @@
+.b1{
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+}
+
+.wrap{
+    background:var(--dark);
+}
+.section{
+    height:100vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.color-dark{    
+    color:#fff;
+}
+
+img {
+	height: 250px;
+}
+#slides img {
+	display: none;
+}

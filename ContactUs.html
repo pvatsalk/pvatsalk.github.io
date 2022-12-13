@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactUsForm</title>
+    <link rel="stylesheet" href="./css/style_contact.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <header>
+      <img style="width: 10%" src="./image/logo1.png" />
+      <nav>
+        <ul id="myTopnav">
+
+          <li>  <a href="index.html"> Home </a> </li>
+          <li>  <a href="overview.html"> Overview </a> </li>
+          <li>   <a href="FutureProspects.html"> Future Prospects </a></li>
+          <li>   <a href="student.html" > Student </a></li>
+          <li>   <a href="work.html" > Work</a></li>
+          <li>   <a href="flights.html"> Flights </a></li>
+          <li>   <a href="thingstocarry.html"> Things to Carry </a></li>
+          <li>   <a href="accomodation.html" >Accomodation</a></li>
+          <li>   <a href="gallery.html">Gallery</a></li>
+           <li>  <a href="faqs.html"> FAQs </a></li>
+          <li>   <a href="ContactUs.html" style="color: white; font-weight: bold; "> Contact US</a></li>
+          <li>   <a href="javascript:void(0);" class="icon" onclick="myFunction()"></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <form action="./response.html" method="get">
+      <main>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="First Name">First Name:</label>
+          <input type="text" name="First Name:" size="30" /> <br />
+          <label for="Last Name">Last Name:</label>
+          <input type="text" name="Last Name:" size="30" /> <br />
+          <label for="email">Email: </label>
+          <input type="email" name="email" size="30" /> <br />
+          <label for="Phone Number">Phone Number: </label>
+          <input type="text" name="text" size="30" /> <br />
+        </fieldset>
+        <fieldset>
+          <legend>Questionaire</legend>
+          <p>How did you hear about us?</p>
+          <input type="radio" name="from" value="Search engine" />Search engine<br />
+          <input type="radio" name="from" value="Word of mouth" />Word of mouth<br />
+          <input type="radio" name="from" value="Other" />Other<br />
+          <p>
+            Which section you need more information about?
+          </p>
+            <select name="Section">
+              <option value="Student Life">Student Life</option>
+              <option value="Flights">Flights</option>
+              <option value="Things To Carry">Things To Carry</option>
+              <option value="FAQs">FAQs</option>
+            </select>
+          </p>
+          <p>
+          What additional information would you like to know about it?
+          </p>
+          <input type="text" name="text" size="60" />
+          <br /><br />
+          Country you reside in:<br />
+          <select name="Country you reside in">
+            <option value="India">India</option>
+            <option value="Canada">Canada</option>
+            <option value="Others">Others</option>
+          </select>
+          <br />
+          Comments:<br />
+           <textarea name="comment"></textarea>
+        </fieldset>
+        <input type="submit" name="submit" value="Submit" />
+      </main>
+    </form>
+    <footer>
+        <div class="footer1">
+            <img src="./image/logo1.png" width="150px" height="150px">
+            <nav>
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-google"></a>
+                <a href="#" class="fa-brands fa-linkedin"></a>
+            </nav>
+        </div>
+        <div class="footer2">
+            <div class="foothead">
+                Quick Links
+            </div>
+            <nav>
+                <ul>
+                  <li> <a href="./index.html" >Home</a></li>
+                  <li> <a href="" >Overview</a></li>
+                  <li> <a href="" >Student</a></li>
+                  <li> <a href="./flights.html" >Flights</a></li>
+                  <li> <a href="" >Things to Carry</a></li>
+                  <li> <a href="./FutureProspects.html">Future Prospects</a></li>
+                  <li> <a href="" >FAQs</a></li>
+                  <li> <a href="./ContactUs.html" >Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <img src="./image/map.png">
+        </div>
+    </footer>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav ul") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav ul";
+      }
+    }
+  </script>
+</html>

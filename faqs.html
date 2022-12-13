@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Paradice City</title>
+    <link rel="stylesheet" href="css/styles-new.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  
+</head>
+
+<body>
+    <header>
+        <img style=" width: 10%;" src="image/logo1.png">
+        <nav>
+            <ul id="myTopnav">
+
+              <li>  <a href="index.html"> Home </a> </li>
+              <li>  <a href="overview.html"> Overview </a> </li>
+              <li>   <a href="FutureProspects.html"> Future Prospects </a></li>
+              <li>   <a href="student.html" > Student </a></li>
+              <li>   <a href="work.html" > Work</a></li>
+              <li>   <a href="flights.html"> Flights </a></li>
+              <li>   <a href="thingstocarry.html"> Things to Carry </a></li>
+              <li>   <a href="accomodation.html">Accomodation</a></li>
+              <li>   <a href="gallery.html">Gallery</a></li>
+               <li>  <a href="faqs.html" style="color: white; font-weight: bold; "> FAQs </a></li>
+              <li>   <a href="ContactUs.html"> Contact US</a></li>
+              <li>   <a href="javascript:void(0);" class="icon" onclick="myFunction()"></li>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="block1" class="block1">
+            Frequently Asked Questions
+        </div>
+
+        <div style="width: 100%; display: flex;justify-content: center;">
+            <div style="width: 50%;" id="animation-container">
+            
+            </div>
+        </div>
+       
+        <script>
+            var animation = bodymovin.loadAnimation({
+            container: document.getElementById('animation-container'),
+            path: 'image/faqjson.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            name: "Animation",
+            });                  
+        </script>
+
+        <div class="faqs">
+            <div class="faqsLeft">
+                <div class="columnRow"> <!-- make it row-->
+                    <i style="color: white;" class="material-icons">token</i>
+                    <div id="generalI" class="columnBlock"> <!-- make it column-->
+                        <!--  -->
+                        <div class="boldText">
+                            <!-- Bold Text --> 
+                            Work Inquiries
+                        </div>
+                        <div class="normalText">
+                            New around here? Start with the basics
+                                <!-- normal Text -->
+                        </div>
+                    </div>
+                </div>
+                <div class="columnRow"> <!-- make it row-->
+                    <i style="color: white;" class="material-icons">school</i>
+                    <div id="studentI" class="columnBlock"> <!-- make it column-->
+                        <!--  -->
+                        <div class="boldText">
+                            <!-- Bold Text --> 
+                            Student Inquiries
+                        </div>
+                        <div class="normalText">
+                            New around here? Start with the basics
+                                <!-- normal Text -->
+                        </div>
+                    </div>
+                </div>
+                <div class="columnRow"> <!-- make it row-->
+                    <i style="color: white;" class="material-icons">flight</i>
+                    <div id="flightI" class="columnBlock"> <!-- make it column-->
+                        <!--  -->
+                        <div class="boldText">
+                            <!-- Bold Text --> 
+                            Flight Inquiries
+                        </div>
+                        <div class="normalText">
+                            New around here? Start with the basics
+                                <!-- normal Text -->
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+            <div id="generalId" class="faqsRight">
+            
+                    <div id="q1" class="columnBlock2" style="display: none;"> <!-- make it column-->
+                        <!--  -->
+                        <div id="qq1" class="boldText2">
+                            <!-- Bold Text --> 
+                            Question 1 ?
+                        </div>
+                        <div id="aa1" class="normalText2">
+                            Answer 1 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam
+                                <!-- normal Text -->
+                        </div>
+                    </div>
+                    <br>
+                    <div id="q2" class="columnBlock2" style="display: none;"> <!-- make it column-->
+                        <!--  -->
+                        <div id="qq2" class="boldText2">
+                            <!-- Bold Text --> 
+                            Question 2 ?
+                        </div>
+                        <div id="aa2" class="normalText2">
+                            Answer 2 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam
+                                <!-- normal Text -->
+                        </div>
+                    </div>
+                    <br>
+                    <div id="q3" class="columnBlock2" style="display: none;"> <!-- make it column-->
+                        <!--  -->
+                        <div id="qq3" class="boldText2">
+                            <!-- Bold Text --> 
+                            Question 2 ?
+                        </div>
+                        <div id="aa3" class="normalText2">
+                            Answer 2 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam
+                                <!-- normal Text -->
+                        </div>
+                    </div>
+                    <br>
+                    <div id="q4" class="columnBlock2" style="display: none;"> <!-- make it column-->
+                        <!--  -->
+                        <div id="qq4" class="boldText2">
+                            <!-- Bold Text --> 
+                            Question 2 ?
+                        </div>
+                        <div id="aa4" class="normalText2">
+                            Answer 2 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam
+                                <!-- normal Text -->
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/faqs-main.js"></script>
+
+    </main>
+    <footer>
+        <div class="footer1">
+            <img src="image/logo1.png" width="150px" height="150px">
+            <nav>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </nav>
+           
+        </div>
+
+        <div class="footer2">
+            <div class="foothead">
+                Quick Links
+            </div>
+            <nav>
+                <ul>
+                  <li> <a href="" >Home</a></li>
+                  <li> <a href="" >Overview</a></li>
+                  <li> <a href="" >Student</a></li>
+                  <li> <a href="" >Flights</a></li>
+                  <li> <a href="" >Things to Carry</a></li>
+                  <li> <a href="" >FAQs</a></li>
+                  <li> <a href="" >Contact US</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+        <div>
+            <img src="image/map.png">
+            
+        </div>
+
+       
+    
+    </footer>
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav ul") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav ul";
+      }
+    }
+</script>
+   
+</html>
+
+
+
+<!-- 
+I’m an international student in Canada. Can I work while studying?
+You may be eligible to work in Canada while studying, if your study permit includes a condition that says you can work on or off campus. You must also meet all the other requirements. You can only start working in Canada when you start your study program. You can’t work before your studies begin.
+
+
+Do I need a permit to study in Canada?
+Most foreign nationals need a study permit to study in Canada. Some people in specific situations may not. Learn more about who needs a study permit.
+You should apply for a study permit before coming to Canada. Only some people can apply for a study permit from within Canada. Before you apply, you must have a letter of acceptance from a designated learning institution in Canada.
+
+
+As a foreign student, can I return home or travel outside Canada while studying?
+Yes. However, your study permit is not a travel document. It doesn’t give you the right to travel to or enter Canada. Along with your permit, you may need:
+a visitor visa (temporary resident visa) or
+an Electronic Travel Authorization (eTA)
+
+
+I want to change my school or study program. How can I change my study permit?
+You don’t need to change your study permit if you’re changing your school or study program
+
+
+How can you check processing time for your application time?
+Visit this Link to check
+https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html
+
+
+
+
+
+ -->

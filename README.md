@@ -1,14 +1,18 @@
 # final-project-humber-hawks
 
 ## Name: Vatsal Patel - N01545593
-  ## Pages
-- [x]  
-- [x]
-- [x]
+- [x] Study
+- [x] Work
+- [x] FAQs
 
   ## Leaning curve and challenges
-  
+
+- Use of js for different  elements.
+- Use of css for the webpage to give dynamic look to the webpage.
+- Use of js to create button responsive so that it displays different answers .
+
   ## Resources
+- Lecture video and youtube lecture .
   
 ## Name: Rajkumar Patel - N01535871
 - [x] ThingstoCarry

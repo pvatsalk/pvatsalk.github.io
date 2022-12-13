@@ -28,13 +28,20 @@
 
 ## Name: Drashti Adhyaru - N01539964
   ## Pages
-- [x]  
-- [x]
-- [x]
+- [x] Overview
+- [x] Accommodation
+- [x] Gallery
 
   ## Leaning curve and challenges
 
+- Use of different css tools.
+- Use of flexbox for alignment of the elements.
+- Use of JS for slideshow and different properties of the webpage..
+- Use of js to create form and alert box.
+
   ## Resources
+
+- Lecture video and youtube lecture.
 
 ## Name: Saurabh Sharma - N01543808
   ## Pages

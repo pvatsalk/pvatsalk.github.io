@@ -106,7 +106,8 @@ function validate() {
     var dataPreview = "Kindly confirm your details: \n" + 
     "Full Name: " + fname + " " + lname + "\n" +
     "Email Address: " + email + "\n" +
-    "Mobile Number: " + mobile + "\n" +
+    "Mobile Number: " + mobile + "\n";
+    
     alert(dataPreview);
   }
 };

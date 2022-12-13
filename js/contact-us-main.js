@@ -41,7 +41,6 @@ function validate() {
   var email = document.ContactUsForm.email.value;
   var numb = document.ContactUsForm.mobile.value;
   var country = document.ContactUsForm.country.value;
-
   var fnameErr = lnameErr = emailErr = numErr = countryErr = true;
 
   if (fname == "") {

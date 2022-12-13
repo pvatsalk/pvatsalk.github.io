@@ -2,238 +2,234 @@
 
 
 * {
-    box-sizing: border-box;
-  }
-   html {
-      width: 100%;
-      font-family: 'Poppins', Helvetica, sans-serif;
-      width: 100%;
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-  
-  } 
-  
-  ul{
-    list-style: none;
+  box-sizing: border-box;
+}
+ html {
+    width: 100%;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+} 
+
+
+body {
+  background-image: url("../image/back1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  /* display: flex; */
+ align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  margin: 0; 
 }
 
-  
-  body {
-    background-image: url("../image/back1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
-    /* display: flex; */
-   align-items: center;
-    justify-content: center;
-    height: 100vh;
-    /* overflow: hidden; */
-    margin: 0; 
-  }
-  
-  header{
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-  }
-  nav{
-      width: 85%;
-  }
-  
-  nav ul{
-      display: flex;
-      width: 75%;
-      justify-content: space-evenly;
-  }
-  nav ul a{
-    display: block;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    color: #1C78CF;
-    font-size: 1em;
-  }
-  
-  
-  
-  
-  .section{
-      width: 100%;
-      height: 445px;
-      background-color: 1px solid black;
-      
-  }
-  .quiz-container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-    width: 600px;
-    overflow: hidden;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  margin-left: 30% ;
-  }
-  
-  .quiz-header {
-    padding: 1rem;
-  }
-  
-  h2 {
-    padding: 1rem;
-    text-align: center;
-    margin: 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-  }
-  
-  ul li label {
-    cursor: pointer;
-  }
-  
-  button {
-        background-image: linear-gradient(to right, #ff5f6d     , #ffc371);
-    color: #fff;
-    border: none;
-    display: block;
+header{
     width: 100%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-family: inherit;
-    padding: 1.3rem;
-    font-weight: bold;
-  }
-  
-  button:hover {
-    background-color: #732d91;
-  }
-  
-  button:focus {
-    outline: none;
-    background-color: #5e3370;
-  }
-  
-  footer{
-      padding: 10px 10px;
-      height: 300px;
-      background-color: rgb(4, 6, 24,0.9);
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-  }
-  
-  .footer1{
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-  }
-  
-  
-  .fa {
-      padding: 20px;
-      font-size: 20px;
-      width: 20px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-  }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    width: 85%;
+}
+
+nav ul{
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+}
+nav ul a{
+  display: block;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  color: #1C78CF;
+  font-size: 1em;
+}
+
+
+
+
+.section{
+    width: 100%;
+    height: 445px;
+    background-color: 1px solid black;
     
-  .fa:hover {
-      opacity: 0.7;
-  }
+}
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+margin-left: 30% ;
+}
+
+.quiz-header {
+  padding: 1rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+      background-image: linear-gradient(to right, #ff5f6d     , #ffc371);
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 1.3rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #732d91;
+}
+
+button:focus {
+  outline: none;
+  background-color: #5e3370;
+}
+
+footer{
+    padding: 10px 10px;
+    height: 300px;
+    background-color: rgb(4, 6, 24,0.9);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
   
-  .fa-facebook {
-  background: #3B5998;
-  color: white;
-  }
-  
-  .fa-twitter {
-  background: #55ACEE;
-  color: white;
-  }
-  
-  .fa-google {
-  background: #dd4b39;
-  color: white;
-  }
-  .fa-linkedin {
-  background: #007bb5;
-  color: white;
-  
-  }
-  
-  .footer2{
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-  }
-  
-  .footer2 nav ul {
-      display: flex;
-      flex-direction: column;
-  }
-  
-  .foothead{
-      color: white;
-      font-size: 24px;
-  }
-  
-  
-  
-  @media screen and (max-width: 600px) {
-      nav ul a:not(:active) {display: none;}
-      
-      nav ul a.icon {
-          float: right;
-          display: block;
-      }
-  }
-  
-  @media screen and (max-width: 600px) {
-  
-  
-      nav ul.responsive {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          width: auto;
-      }
-      nav ul.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      nav ul.responsive a {
-        float: none;
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+
+}
+
+.footer2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2 nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.foothead{
+    color: white;
+    font-size: 24px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    nav ul a:not(:active) {display: none;}
+    
+    nav ul a.icon {
+        float: right;
         display: block;
-      }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    nav ul.responsive {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    nav ul.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav ul.responsive a {
+      float: none;
+      display: block;
+    }
+
+    footer{
+        height: auto;
+        background-color: rgb(4, 6, 24,0.9);
+        width:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer2 nav ul a{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+
+
+}
   
-      footer{
-          height: auto;
-          background-color: rgb(4, 6, 24,0.9);
-          width:auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
   
-  
-      .footer2 nav ul a{
-          display: flex;
-          flex-direction: column;
-          color: white;
-      }
-  
-  
-  
-  }
-    
-    

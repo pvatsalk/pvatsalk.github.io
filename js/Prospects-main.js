@@ -1,11 +1,11 @@
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "nav ul") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav ul";
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav ul") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav ul";
+    }
   }
-}
 const about = document.querySelector(".about");
 const btns = document.querySelectorAll(".tab-btn");
 const articles = document.querySelectorAll(".content");
